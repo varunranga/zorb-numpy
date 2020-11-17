@@ -24,3 +24,13 @@ Train a convolutional neural network with 2 sigmoid-activated convolutional laye
 > cd zorb
 >
 > python3 zorb-cli.py -d CIFAR10 -n Convolution[8,3] sigmoid Convolution[16,3] sigmoid Flatten
+
+##### Note
+
+For a fully connected layer, use "Dense[<units>]"
+  
+For a convolution layer, use "Convolution[<kernels>,<size(optional,default=3)>,<stride(optional,default=1>]"
+  
+For a flatten layer, use "Flatten"
+
+For an activation layer, use "<activation>"
