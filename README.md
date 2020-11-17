@@ -20,11 +20,11 @@ Train a fully connected network with 2 sigmoid-activated hidden layers with 512 
 >
 > python3 zorb-cli.py -d MNIST -n Flatten Dense[512] sigmoid Dense[256] sigmoid
 
-Train a convolutional neural network with 2 sigmoid-activated convolutional layers with 8 and 16 kernels of size 3x3 on the CIFAR10 dataset:
+Train a convolutional neural network on the CIFAR10 dataset with 2 sigmoid-activated convolutional layers with 8 and 16 kernels of size 3x3 followed by 1 sigmoid-activated fully connected layer with 512 neurons:
 
 > cd zorb
 >
-> python3 zorb-cli.py -d CIFAR10 -n Convolution[8,3] sigmoid Convolution[16,3] sigmoid Flatten
+> python3 zorb-cli.py -d CIFAR10 -n Convolution[8,3] sigmoid Convolution[16,3] sigmoid Flatten Dense[512] sigmoid
 
 ##### Note
 
