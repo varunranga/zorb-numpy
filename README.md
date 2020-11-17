@@ -16,9 +16,11 @@ The '-n'/'--network' argument can be used to describe your architecture, without
 Train a fully connected network with 2 sigmoid-activated hidden layers with 512 and 256 neurons on the MNIST dataset:
 
 > cd zorb
+>
 > python3 zorb-cli.py -d MNIST -n Flatten Dense[512] sigmoid Dense[256] sigmoid
 
 Train a convolutional neural network with 2 sigmoid-activated convolutional layers with 8 and 16 kernels of size 3x3 on the CIFAR10 dataset:
 
 > cd zorb
+>
 > python3 zorb-cli.py -d CIFAR10 -n Convolution[8,3] sigmoid Convolution[16,3] sigmoid Flatten
