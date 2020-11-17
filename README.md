@@ -10,6 +10,7 @@ You can import zorb to your script and utilize it's functionalities.
 
 Alternatively, you can directly train and evaluate models using command line arguments.
 The '-n'/'--network' argument can be used to describe your architecture, without the output layer.
+Use the '-h'/'--help' argument for available arguments and it's usage.
 
 #### Examples
 
